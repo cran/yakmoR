@@ -1,4 +1,4 @@
-c2276fbe6d53a1878ec17fb0b9bd0ec8 *DESCRIPTION
+abcf777602795733125f27136ac0ecb2 *DESCRIPTION
 88f41ea070305417ebddb9a8f3b718c2 *NAMESPACE
 d215f792d1f976325dbc879bdd56d96c *R/RcppExports.R
 51b43e17b1b563d955d1537d83dfd66f *R/orthoKMeansPredict.R
@@ -18,7 +18,7 @@ ff99ada941139369229d906aad6dc3e0 *src/Makevars
 48de2100d63053c99711a423aebfee57 *src/Makevars.win
 aa3ae5ff029ed6d4e70ae25bcd5f63c9 *src/RcppExports.cpp
 6eca68c66d273acc9df37ff39b548d13 *src/errx_dummy.h
-6a4b26d5676dba81f661a6c575117296 *src/yakmo.h
+a2e292393233a8c63d518bb435ba3e64 *src/yakmo.h
 2203d4a79bf7e32d5be8302da6bc37e9 *src/yakmo_wrapper.cpp
 92292185c1af29618fda55aaca6735f3 *tests/testthat.R
 e6b123d85d51a3382fe2e9fda6a2455b *tests/testthat/test_Crossplatform.R

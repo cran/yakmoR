@@ -29,7 +29,7 @@ using namespace Rcpp;
 
 
 // fix missing posix getline :/
-#ifdef WIN32
+#if defined(WIN32) or defined(__sun)
 
 /* getline.c -- Replacement for GNU C library function getline
 
@@ -195,6 +195,14 @@ namespace yakmo {
 #ifdef __APPLE__
 
         if ( (line = fgetln (fp, &read)) == NULL) return false;
+#elif __sun
+        // problems with 64bit and size_t :/
+        static signed long int read_ = 0;
+        static unsigned long int size = 0; // static helps inlining
+
+        if ( (read_ = getline (&line, &size, fp)) == -1) return false;
+
+        read = read_;
 
 #elif WIN32
         // problems with 64bit and size_t :/
